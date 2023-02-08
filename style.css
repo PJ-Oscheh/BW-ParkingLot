@@ -120,12 +120,14 @@ div.mHeader h1.appHeader {
 }
 
 div.mobileNav {
+
 }
 
 div.mobileNav ul.mNavBar {
-  position: absolute;
+  
   padding: 0px;
   margin: 0px;
+  position: fixed;
   bottom: 0px;
   background-color: #FFCC33;
   overflow: hidden;
