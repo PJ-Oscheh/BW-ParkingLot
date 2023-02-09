@@ -125,8 +125,10 @@ div.mobileNav {
 
 div.mobileNav ul.mNavBar {
   
+  display: block;
   padding: 0px;
   margin: 0px;
+  margin-top: 200px;
   position: fixed;
   bottom: 0px;
   background-color: #FFCC33;
@@ -174,6 +176,13 @@ div.mobileNav ul li img{
   display: block;
 }
 
+div.mobileBuffer {
+  
+  display: block;
+  position: relative;
+  height: 100px;
+}
+
 
 
 /* Mobile */
@@ -206,6 +215,8 @@ div.mobileNav ul li img{
    button.btnSpicy:active {
     background-color: #861016;
   }
+  
+  div.mobileBuffer {display: block;}
 }
 
 
@@ -213,4 +224,5 @@ div.mobileNav ul li img{
 @media screen and (min-width: 801px) {
   div.mobileNav {display: none}
   div.mHeader {display: none;}
+  div.mobileBuffer {display: none;}
 }
