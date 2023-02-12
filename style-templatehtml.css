@@ -160,7 +160,7 @@ div.mobileNav ul.mNavBar {
   margin: 0px;
   position: fixed;
   bottom: 0px;
-  background-color: #FFCC33;
+  background-color: #FFFFFF;
   overflow: hidden;
   list-style-type: none;
   box-shadow: 0px 0px 6px #999999;
@@ -197,7 +197,7 @@ div.btnMNav text {
 
 
 div.btnMNav:active {
-  background-color: #b38f24;
+  background-color: #b3b3b3;
   color: black;
 }
 
