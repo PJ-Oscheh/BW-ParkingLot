@@ -9,7 +9,7 @@ div.mainContent {
 }
 
 button.btnNormal {
-  background-color: #3D2D1F;
+  background-color: #504235;
   color: white;
   border-style: none;
   border-radius: 7px;
@@ -17,16 +17,21 @@ button.btnNormal {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 11pt;
-  box-shadow: 0px 6px 5px #999999;
+  box-shadow: 0px 4px #120d09;
+  transition: ease-in-out;
+  transition-duration: 30ms;
 }
 
 
 button.btnNormal:hover {
-  background-color: #251b13;
+  background-color: #64574c;
+  box-shadow: 0px 4px #3d2d1f;
 }
 
 button.btnNormal:active {
-  background-color: #060403;
+  background-color: #504235;
+  box-shadow: 0px 0px #120d09;
+  transform: translate(0,4px);
 }
 
 
@@ -40,17 +45,22 @@ button.btnHighlight {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 11pt;
-  box-shadow: 0px 6px 5px #999999;
+  box-shadow: 0px 4px #b38f24;
+  transition: ease-in-out;
+  transition-duration: 30ms;
 }
 
 
 
 button.btnHighlight:hover {
-  background-color: #cca329;
+  background-color: #ffd65c;
+  box-shadow: 0px 4px #e6b82e;
 }
 
 button.btnHighlight:active {
-  background-color: #b38f24;
+  background-color: #FFCC33;
+  box-shadow: 0px 0px #b38f24;
+  transform: translate(0px,4px);
 }
 
 button.btnSpicy {
@@ -62,15 +72,20 @@ button.btnSpicy {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 11pt;
-  box-shadow: 0px 6px 5px #999999;
+  box-shadow: 0px 4px #9d1319;
+  transition: ease-in-out;
+  transition-duration: 30ms;
 }
 
 button.btnSpicy:hover {
-  background-color: #9d1319;
+  background-color: #e64950;
+  box-shadow: 0px 4px #ca1820;
 }
 
 button.btnSpicy:active {
-  background-color: #861016;
+  background-color: #e01b24;
+  box-shadow: 0px 0px #9d1319;
+  transform: translate(0px,4px);
 }
 
 button
@@ -154,7 +169,10 @@ div.mobileNav ul.mNavBar {
 
 div.btnMNav {
   display: block;
-  padding: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin: 0px;
   color: black;
 }
@@ -201,31 +219,36 @@ div.mobileBuffer {
 @media screen and (max-width: 800px) {
   div.desktopNav {display: none;}
   button.btnNormal, button.btnHighlight, button.btnSpicy {
-    padding: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
   
   button.btnNormal:hover {
-    background-color: #3D2D1F
+    background-color: #504235;
+    box-shadow: 0px 4px #120d09;
   }
   
   button.btnNormal:active {
-    background-color: #060403;
+    box-shadow: 0px 0px #120d09;
   }
   
   button.btnHighlight:hover {
-    background-color: #FFCC33
+    background-color: #FFCC33;
+    box-shadow: 0px 4px #b38f24;
   }
   
   button.btnHighlight:active {
-    background-color: #b38f24;
+    box-shadow: 0px 0px #b38f24;
   }
   
    button.btnSpicy:hover {
     background-color: #e01b24;
+    box-shadow: 0px 4px #9d1319;
    }
    
    button.btnSpicy:active {
-    background-color: #861016;
+    background-color: #e01b24;
+    box-shadow: 0px 0px #9d1319;
   }
   
   div.mobileBuffer {display: block;}
