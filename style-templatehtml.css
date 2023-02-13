@@ -22,6 +22,12 @@ button.btnNormal {
   transition-duration: 30ms;
 }
 
+@keyframes normalLoading {
+  0% {background-color: #504235;}
+  50% {background-color: #73685d;}
+  100% {background-color: #504235;}
+}
+
 
 button.btnNormal:hover {
   background-color: #64574c;
@@ -48,6 +54,13 @@ button.btnHighlight {
   box-shadow: 0px 4px #b38f24;
   transition: ease-in-out;
   transition-duration: 30ms;
+  
+}
+
+@keyframes highlightLoading {
+  0% {background-color: #ffcc33;}
+  50% {background-color: #fff0c2;}
+  100% {background-color: #ffcc33;}
 }
 
 
@@ -77,6 +90,14 @@ button.btnSpicy {
   transition-duration: 30ms;
 }
 
+@keyframes spicyLoading {
+  0% {background-color: #e01b24;}
+  50% {background-color: #e95f66;}
+  100% {background-color: #e01b24;}
+}
+
+
+
 button.btnSpicy:hover {
   background-color: #e64950;
   box-shadow: 0px 4px #ca1820;
@@ -87,6 +108,7 @@ button.btnSpicy:active {
   box-shadow: 0px 0px #9d1319;
   transform: translate(0px,4px);
 }
+
 
 
 p, h1, h2, h3 {

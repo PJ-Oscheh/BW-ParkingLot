@@ -27,7 +27,7 @@
       <h1>Cute Test Header</h1>
       <h2>Normal button:</h2>
       <button class="btnNormal">Normal Button</button>
-      <p>Use Normal Buttons as a default button</p>
+      <p>Use Normal Buttons as a default button.</p>
       <h2>Highlight Button:</h2>
       <button class="btnHighlight">Highlight Button</button>
       <p>Use Highlight Buttons to highlight the option the user probably wants
@@ -39,6 +39,14 @@
       <p>Use Spicy Buttons to indicate a destructive action, such as permanent
         deletion.
       </p>
+      
+      <h1>Epic Test!</h1>
+      <h2>Loading Animation Test</h2>
+      <p>Below is a cool loading animation test</p>
+      <p>If an action may not be completed in less than a second (like starting a page load or waiting for server response), we can use this.</p>
+      <button class="btnNormal" id="btnTestNorm" onclick="doLoadingAnim(this.id)">Go Back</button>
+      <button class="btnHighlight" id="btnTest" onclick="doLoadingAnim(this.id)">Park</button>
+      <button class="btnSpicy" id="btnSpicy" onclick="doLoadingAnim(this.id)">Delete</button>
     </div>
     <div class="mobileBuffer">
     </div>
@@ -50,4 +58,9 @@
       </ul>
     </div>
   </body>
+  <footer>
+    <!--Script is put into footer so that content loads first.
+        Also allows easier ID selection -->
+    <script src="script-templatehtml.js"></script>
+  </footer>
 </html>
