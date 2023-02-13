@@ -169,13 +169,6 @@ div.mobileBufferH {
   height: 64px;
 }
 
-
-div.mobileNav {
-
-}
-
-
-
 div.mobileNav ul.mNavBar {
   display: block;
   padding: 0px;
@@ -185,7 +178,8 @@ div.mobileNav ul.mNavBar {
   background-color: #FFFFFF;
   overflow: hidden;
   list-style-type: none;
-  box-shadow: 0px 0px 6px #999999;
+  /* Old nav shadow: box-shadow: 0px 0px 6px #999999;*/ 
+  box-shadow: 0px -1px #e6e6e6;
   width: 100%;
   text-align: center;
   

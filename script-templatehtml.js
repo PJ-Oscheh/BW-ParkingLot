@@ -1,7 +1,8 @@
 console.log("Loaded!");
 
+//TODO: Remove inline function calls, prevent clicking when loading
 function doLoadingAnim(btnId) {
-
+  console.log("Clicked");
   btn = document.getElementById(btnId);
   
   if (btn.getAttribute("class") === "btnNormal" ){
