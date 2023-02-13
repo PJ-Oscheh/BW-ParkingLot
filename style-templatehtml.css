@@ -1,3 +1,4 @@
+
 html, body {
   padding: 0;
   margin: 0;
@@ -22,6 +23,7 @@ button.btnNormal {
   transition-duration: 15ms;
 }
 
+/* TODO: Remove normalLoading, highlightLoading, spicyLoading if unused */
 @keyframes normalLoading {
   0% {background-color: #504235;}
   50% {background-color: #73685d;}
@@ -57,6 +59,11 @@ button.btnHighlight {
   
 }
 
+@keyframes loadingAnim {
+  0% {opacity: 100%;}
+  50% {opacity: 25%;}
+  100% {opacity: 100%;}
+}
 @keyframes highlightLoading {
   0% {background-color: #ffcc33;}
   50% {background-color: #fff0c2;}
@@ -88,6 +95,12 @@ button.btnSpicy {
   box-shadow: 0px 4px #9d1319;
   transition: ease-in-out;
   transition-duration: 15ms;
+}
+
+@keyframes spicyLoading {
+  0% {background-color: #e01b24;}
+  50% {background-color: #e95f66;}
+  100% {background-color: #e01b24;}
 }
 
 @keyframes spicyLoading {
