@@ -325,7 +325,9 @@ div.mobileBuffer {
   
   div.mobileBuffer {display: block;}
   
-  div.mobileBufferH {display: block;}
+  div.lotBox {
+    padding: 10px;
+  }
 }
 
 
