@@ -1,0 +1,223 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+}
+div.desktopNav {
+  margin: 0;
+  padding: 0px;
+}
+
+div.desktopNav ul {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  background-color: #FFCC33;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px 1px 4px #999999;
+}
+
+
+div.desktopNav ul li {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.desktopNav ul li.left {
+  float: left;
+}
+
+div.desktopNav ul li.right {
+  float: right;
+}
+
+div.desktopNav ul li.center {
+  float: bottom;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; 
+}
+
+div.noClick {
+  display: block;
+  float: left;
+  padding-top: 5px;
+  padding-left: 91px;
+}
+
+
+div.desktopNav ul li p.pageTitle {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16pt;
+  vertical-align: middle;
+}
+
+div.desktopNav a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 23.33px;
+  padding-bottom: 23.33px;
+  height: 50%;
+  font-size: 13pt;
+  font-family: Arial;
+}
+
+div.desktopNav a.current {
+  font-weight: bold;
+}
+
+/* Buttons */
+
+button.btnNormal {
+  background-color: #504235;
+  color: white;
+  border-style: none;
+  border-radius: 7px;
+  padding: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11pt;
+  box-shadow: 0px 4px #120d09;
+  transition: ease-in-out;
+  transition-duration: 15ms;
+}
+
+button.btnNormal:hover {
+  background-color: #64574c;
+  box-shadow: 0px 4px #3d2d1f;
+}
+
+button.btnNormal:active {
+  background-color: #504235;
+  box-shadow: 0px 0px #120d09;
+  transform: translate(0,4px);
+}
+
+
+
+button.btnHighlight {
+  background-color: #FFCC33;
+  color: black;
+  border-style: none;
+  border-radius: 7px;
+  padding: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11pt;
+  box-shadow: 0px 4px #b38f24;
+  transition: ease-in-out;
+  transition-duration: 15ms;
+  
+}
+
+@keyframes loadingAnim {
+  0% {opacity: 100%;}
+  50% {opacity: 25%;}
+  100% {opacity: 100%;}
+}
+
+
+button.btnHighlight:hover {
+  background-color: #ffd65c;
+  box-shadow: 0px 4px #e6b82e;
+}
+
+button.btnHighlight:active {
+  background-color: #FFCC33;
+  box-shadow: 0px 0px #b38f24;
+  transform: translate(0px,4px);
+}
+
+button.btnSpicy {
+  background-color: #e01b24;
+  color: white;
+  border-style: none;
+  border-radius: 7px;
+  padding: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11pt;
+  box-shadow: 0px 4px #9d1319;
+  transition: ease-in-out;
+  transition-duration: 15ms;
+}
+
+
+
+button.btnSpicy:hover {
+  background-color: #e64950;
+  box-shadow: 0px 4px #ca1820;
+}
+
+button.btnSpicy:active {
+  background-color: #e01b24;
+  box-shadow: 0px 0px #9d1319;
+  transform: translate(0px,4px);
+}
+
+
+
+/* Main Content */
+
+div.mainContent {
+  float: none;
+}
+
+/* Lot Cards */
+
+div.lotContainer {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  margin: 0px;
+  width: 350px;
+  height: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 14px;
+}
+
+div.lotBox {
+  text-align: center;
+  padding: 50px;
+}
+
+
+div.lotContainer p {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 16pt;
+  width: 100%;
+  text-align: center;
+}
+
+div.lotContainer img {
+  display: block;
+  width: 256px;
+  height: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.lotContainer button {
+  display: block;
+  margin: 0px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
