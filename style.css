@@ -123,8 +123,11 @@ button.btnHighlight {
   font-weight: bold;
   font-size: 11pt;
   box-shadow: 0px 4px #b38f24;
+  
+  /*
   transition: ease-in-out;
-  transition-duration: 15ms;
+  transition-duration: 50ms;
+  */
   
 }
 
