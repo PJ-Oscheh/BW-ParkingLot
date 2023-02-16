@@ -178,7 +178,6 @@ button.btnSpicy:active {
 /* Main Content */
 
 div.mainContent {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
@@ -193,10 +192,10 @@ div.lotContainer {
   margin: 0px;
   width: 350px;
   height: 350px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: white;
   border-radius: 14px;
   box-shadow: 0px 1px 4px #b0b0b0;
@@ -205,8 +204,8 @@ div.lotContainer {
 div.lotBox {
   text-align: center;
   padding-top: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 
