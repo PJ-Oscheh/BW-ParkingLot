@@ -32,12 +32,6 @@ div.desktopNav ul {
   box-shadow: 0px 1px 2px #999999;
 }
 
-div.buffer {
-  display: block;
-  position: relative;
-  height: 0px;
-  margin-top: 0px;
-}
 
 
 div.desktopNav ul li {
@@ -190,8 +184,11 @@ button.btnSpicy:active {
 /* Main Content */
 
 div.mainContent {
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
   max-width: 1000px;
 }
 
@@ -377,13 +374,6 @@ div.mobileNav ul li img{
   
 }
 
-div.mobileBuffer {
-  
-  display: block;
-  position: relative;
-  height: 100px;
-}
-
 /* Show and Hide Based On Screen 8 */
 
 /* Mobile */
@@ -422,8 +412,6 @@ div.mobileBuffer {
     box-shadow: 0px 0px #9d1319;
   }
   
-  div.mobileBuffer {display: block;}
-  
   div.lotBox {grid-template-columns: auto;}
 
 }
@@ -438,7 +426,6 @@ div.mobileBuffer {
 @media screen and (min-width: 801px) {
   div.mobileNav {display: none}
   div.mobileHeader {display: none;}
-  div.mobileBuffer {display: none;}
   
   
 }
