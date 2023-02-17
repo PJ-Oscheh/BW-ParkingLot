@@ -79,9 +79,17 @@ div.desktopNav a {
   padding-right: 0px;
   padding-top: 23.33px;
   padding-bottom: 23.33px;
-  width: 64px;
+  width: 80px;
   height: 50%;
   font-size: 13pt;
+}
+
+div.desktopNav a:hover {
+  background-color: #e6b82e;
+}
+
+div.desktopNav a:active {
+  background-color: #cca329;
 }
 
 div.desktopNav a.current {
