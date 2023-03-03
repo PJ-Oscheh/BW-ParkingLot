@@ -1,12 +1,10 @@
 console.log("Loaded like a potato");
 
-const body = document.getElementById("body");
+const button = document.getElementById("btnParkKnow");
 
-const button = document.getElementById("btnParkKnow")
 
 // Button Callbacks
 button.addEventListener("click",function(){park()});
-
 
 /**
  *  Callback for Park buttons.
@@ -25,15 +23,14 @@ function toast(text, duration) {
 
   toastId = Math.random()
   strToast = `
-  <div class="toastBox">
-    <div class="toast" id="${toastId}">
+  <div class="toastBox" id="${toastId}">
+    <div class="toast">
     ${text}
     </div>
   </div>
   `
 
-  body.innerHTML += strToast;
-  console.log(toastId);
+  body.insertAdjacentHTML('beforeend',strToast);
   objToast = document.getElementById(toastId);
   setTimeout(() => {objToast.parentNode.removeChild(objToast)},duration);
 }
