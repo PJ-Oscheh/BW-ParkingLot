@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #F4F7FC;
+  background-color: #e6e6e6;
 }
 
 p, a, li{
@@ -11,27 +11,29 @@ p, a, li{
 /* Desktop Navigation */
 
 div.desktopNav {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
+  
+  margin: 0;
   padding: 0px;
 }
 
 div.desktopNav ul {
-  display: block;
+  display: inline-block;
   position: fixed;
   margin: 0px;
-  margin-top: 8px;
   padding: 0px;
   list-style-type: none;
   background-color: #FFCC33;
   overflow: hidden;
   text-align: center;
-  width: 98%;
-  border-radius: 7px;
-  box-shadow: 0px 1px 2px #999999;
+  width: 100%;
+  box-shadow: 0px 1px 4px #999999;
 }
 
+div.buffer {
+  display: block;
+  position: relative;
+  height: 50px;
+}
 
 
 div.desktopNav ul li {
@@ -79,17 +81,9 @@ div.desktopNav a {
   padding-right: 0px;
   padding-top: 23.33px;
   padding-bottom: 23.33px;
-  width: 80px;
+  width: 64px;
   height: 50%;
   font-size: 13pt;
-}
-
-div.desktopNav a:hover {
-  background-color: #e6b82e;
-}
-
-div.desktopNav a:active {
-  background-color: #cca329;
 }
 
 div.desktopNav a.current {
@@ -192,11 +186,8 @@ button.btnSpicy:active {
 /* Main Content */
 
 div.mainContent {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
   max-width: 1000px;
 }
 
@@ -208,9 +199,9 @@ div.lotContainer {
   margin: 0px;
   width: 350px;
   height: 350px;
-  background-color: #FFFFFF;
-  border-radius: 30px;
-  box-shadow: 0px 0px 8px 1px #00000040;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0px 1px 4px #b0b0b0;
 }
 
 div.lotBox {
@@ -247,7 +238,7 @@ div.lotContBottom p num {
 }
 
 div.lotContBottom p num.taken {
-  color: #997a1f;
+  color: #999999;
 }
 
 div.lotContBottom p.left {
@@ -276,21 +267,14 @@ div.lotContainer button {
 
 /* Mobile Navigation */
 
-div.mobileHeaderEXPCONT {
-  display: flex;
-  justify-content: center;
-}
-
 div.mobileHeader {
   position: fixed;
-  width: 93%;
+  width: 100%;
   margin: 0px;
-  margin-top: 8px;
   padding: 0px;
   background-color: #FFCC33;
   text-align: center;
-  box-shadow: 0px 1px 2px #999999;
-  border-radius: 7px;
+  box-shadow: 0px 1px 4px #999999;
 }
 
 div.mobileHeader p.pageTitle {
@@ -382,6 +366,13 @@ div.mobileNav ul li img{
   
 }
 
+div.mobileBuffer {
+  
+  display: block;
+  position: relative;
+  height: 100px;
+}
+
 /* Show and Hide Based On Screen 8 */
 
 /* Mobile */
@@ -420,6 +411,8 @@ div.mobileNav ul li img{
     box-shadow: 0px 0px #9d1319;
   }
   
+  div.mobileBuffer {display: block;}
+  
   div.lotBox {grid-template-columns: auto;}
 
 }
@@ -434,6 +427,7 @@ div.mobileNav ul li img{
 @media screen and (min-width: 801px) {
   div.mobileNav {display: none}
   div.mobileHeader {display: none;}
+  div.mobileBuffer {display: none;}
   
   
 }
