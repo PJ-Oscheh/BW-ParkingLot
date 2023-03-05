@@ -5,9 +5,10 @@ Pj add to this
 
 ----Problems----
 "what do we do if someone parks in a spot but doesn't unpark?"
-    Ideas: have the parking people correct miss counts
-    For some parking lots have the count rest at midnight(knowlton)
-    Give up
+    Ideas: 
+    1.have the parking people correct miss counts
+    2.For some parking lots have the count rest at midnight(knowlton)
+    3.Give up
 
 
 
