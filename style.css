@@ -289,10 +289,6 @@ div.lotContainer button {
   width: 50%;
 }
 
-div.lotContainer button.btnHighlight {
-
-}
-
 /* Mobile Navigation */
 
 div.mobileHeaderEXPCONT {
@@ -465,6 +461,5 @@ div.toast {
 @media screen and (min-width: 801px) {
   div.mobileNav {display: none}
   div.mobileHeader {display: none;}
-  
   
 }
