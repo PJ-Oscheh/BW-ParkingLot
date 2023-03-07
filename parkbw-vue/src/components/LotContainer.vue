@@ -25,12 +25,27 @@
             <p class="bottomTxt right">Taken:<br>
                 <num class="taken">5</num>
             </p>
-            <button class="btnHighlight">Park</button>
+            <button class="btnHighlight" @click="park(know)">Park</button>
         </div>
     </div>
 
 </template>
+<script>
 
+/* Short Names */
+let know = "Knowlton";
+
+export default{
+    methods: {
+        park(lot) {
+            //Add toast
+        },
+        toastMsg(lot) {
+            return "Parked in " + lot +"!"
+        }
+    }
+}
+</script>
 <style>
     /* Lot Cards */
     

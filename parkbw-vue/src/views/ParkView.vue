@@ -1,10 +1,12 @@
 <script setup>
     import LotContainer from '@/components/LotContainer.vue';
+    import Toast from '@/components/Toast.vue';
 </script>
 
 <template>
     <div class="park">
         <h1 class="secHeader">North Campus</h1>
+        <p class="tidbit">North Quad, Ritter, Knowlton, Dorms</p>
         <div class="lotBox">
             <LotContainer lotName="Knowlton Lot" 
             :lotImg="require('../assets/imgKnowlton.svg')" 
@@ -21,6 +23,7 @@
         </div>
 
         <h1 class="secHeader">South Campus</h1>
+        <p class="tidbit">Union, Suites, Freshman Dorms</p>
         <div class="lotBox">
             <LotContainer lotName="Strosacker Union Lot"
             :lotImg="require('../assets/fakeLot.svg')"
@@ -28,6 +31,8 @@
         </div>
     </div>
 </template>
+
+
 
 <style>
     div.park {
@@ -45,6 +50,12 @@
     h1.secHeader {
         font-size: 36pt;
         margin: 20px;
+    }
+
+    p.tidbit {
+        margin: 20px;
+        font-size: 14pt;
+        text-transform: uppercase;
     }
 
     /*  Desktop, Small */

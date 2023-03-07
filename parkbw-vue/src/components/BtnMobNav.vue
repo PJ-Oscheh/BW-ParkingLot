@@ -11,7 +11,6 @@ defineProps({
 <template>
     <div class="btnMNav">
         <img :src="icon" />
-        <br>
         <p class="btn-text">{{ text }}</p>
     </div>
 </template>
@@ -29,6 +28,10 @@ div.btnMNav {
     height: 64px;
     padding: 0px;
     margin: 4px;
+    transition: transform 90ms ease-in-out;
+    user-select: none;
+
+
 }
 
 div.btnMNav img {
@@ -36,6 +39,8 @@ div.btnMNav img {
     padding-bottom: 8px;
     width: 32px;
     height: 32px;
+    user-select: none;
+    pointer-events: none;
 }
 
 div.btnMNav p.btn-text {
@@ -47,40 +52,12 @@ div.btnMNav p.btn-text {
     
 }
 
-/*
-div.btnMNav {
-  font-size: 0;
-  display: inline-block;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin: 0px;
-  color: black;
-  vertical-align: top;
-}
 
 
-div.btnMNav img{
-  font-size: 0;
-  margin: 0px;
-  padding-top: 0px;
-  padding-bottom: 8px;
-  width: 32px;
-  height: 32px;
+div.btnMNav:active {
+  transform: scale(.85);
+  
   
 }
 
-div.btnMNav p.btn-text {
-    display: block;
-    margin: 0px;
-    padding: 0px;
-    font-size:  11pt;
-}
-
-div.btnMNav:active {
-  background-color: #b3b3b3;
-  color: black;
-}
-*/
 </style>

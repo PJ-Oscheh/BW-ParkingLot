@@ -45,8 +45,13 @@ import BtnMobNav from './components/BtnMobNav.vue';
 <style>
 /* Global Styling */
 
+@font-face {
+  font-family: Oswald;
+  src: url("./assets/oswald.ttf")
+}
+
 * {
-  font-family: Arial;
+  font-family: Oswald;
   
 }
 
@@ -94,6 +99,7 @@ button.btnHighlight {
   box-shadow: 0px 4px #b38f24;
   transition: ease-in-out;
   transition-duration: 15ms;
+  user-select: none;
 }
 
 
@@ -266,14 +272,14 @@ div.desktopNav a.current {
 
   div.mobileHeader {
     position: fixed;
-    width: 93%;
+    width: 100%;
     margin: 0px;
-    margin-top: 8px;
+    margin-top: 0px;
     padding: 0px;
-    background-color: #FFCC33;
+    background-color: white;
     text-align: center;
-    box-shadow: 0px 1px 2px #999999;
-    border-radius: 7px;
+    box-shadow: 0px 2px 15px#e6e6e6;
+    border-radius: 0px;
 }
 
 div.mobileNav ul.mNavBar {
@@ -325,6 +331,8 @@ a {
 a.noHighlight {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 div.mobileNav ul.mNavBar .router-link-active {
